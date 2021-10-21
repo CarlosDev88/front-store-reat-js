@@ -8,7 +8,7 @@ class ProductProvider extends Component {
     products: [],
     detailProduct: detailProduct,
     cart: [],
-    modalOpen: true,
+    modalOpen: false,
     modalProduct: detailProduct,
     cartSubTotal: 0,
     cartTax: 0,
@@ -92,6 +92,10 @@ class ProductProvider extends Component {
     console.log("removeItem method");
   };
 
+  clearCart = () => {
+    console.log("cart was clear");
+  };
+
   render() {
     return (
       <ProductContext.Provider
@@ -101,6 +105,10 @@ class ProductProvider extends Component {
           addToCart: this.addToCart,
           openModal: this.openModal,
           closeModal: this.closeModal,
+          incremet: this.incremet,
+          decrement: this.decrement,
+          removeItem: this.removeItem,
+          clearCart: this.clearCart,
         }}
       >
         {this.props.children}
