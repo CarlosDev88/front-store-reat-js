@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+this project contains the frontend of a product page made with the JavaScript library React JS.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
